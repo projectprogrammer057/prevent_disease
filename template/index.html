@@ -1,10 +1,11 @@
 <!-- This is GUI for Diabetes Detection Application Using Machine Learning Classifer -->
 
+
 <!DOCTYPE html>
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>DIABETES PROBLEM SOLVED BY KALAM SARDAR</title>
+  <title>diabetes Detected BY KALAM SARDAR</title>
 
   <style>
     /* CSS code for button */
@@ -29,77 +30,20 @@
     
     .button_css:hover {
     color: #ffffff !important;
-    background: green;
+    background: #f6b93b;
     border-color: #f6b93b !important;
     transition: all 0.4s ease 0s;
     }
-	@media(min-width:1200px){
-	 
-	
-	
-	}
-	@media(min-width:992px) and (max-width:1199px){
-	
-	body{
-	  position:absolute;
-	  width:950px;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: contain;
-	  margin:10px;
-	   }
-	
-	}
-	@media(min-width:768px) and (max-width:951px){
-	body{
-	  position:absolute;
-	  width:750px;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: contain;
-	  margin:10px;
-	   }
-	
-	
-	}
-	@media(min-width:576px) and (max-width:767px){
-	 body{
-	  position:absolute;
-	  width:550px;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: contain;
-	  margin:10px;
-	   }
-	
-	}
-	@media(max-width:575px){
-	body{
-	  position:absolute;
-	  width:350px;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: contain;
-	  margin:10px;
-	   }
-	   
-	}
-
-	span{
-	color:red;
-	}
-	h2{
-	text-align:center;
-	}
+    .pain{
+	   color:green;
+	    text-align:center;
+	  }
   </style>
 
 </head>
 
 <body>
-
- 
- 
- <div class="login">
+<div class="login">
 	
     <!-- Get input for predict the  heart disease -->
     <center>
@@ -107,34 +51,56 @@
             <br>
                <br>
                   <br>
-    <form action="{{ url_for('predict')}}" method="post">
+    <form action="{{ url_for('predict')}}"method="post">
+       
           <br>
             <br>
               <br>
                 <br>
                   <br>
-                    
+                    <br>
+                      <br>
+                        <br>
+                          <br>
+                           <br>
+                            <br>
+                             <br>
+                              <br>
+                               <br>
+                                <br>
+                                 <br>
+                                  <br>
+                                   <br>
+                                    <br>
+                                     <br>
+                                      <br>
+                                        <br>
+                                        
+                                    
 
-        <h1>>>>Enter the value of Your Body Features >>></h1>
+        <h1>Enter the value of body features >>></h1>
         
-    	<input type="text" name="age" placeholder="Your Age(Years)" required="required" />
-        <input type="text" name="bmi" placeholder="Your BMI" required="required" />
-		<input type="text" name="diab_pred" placeholder="Diabetes pedigree function" required="required" />
-        <input type="text" name="insulin" placeholder="Serum Insulin" required="required" />
-         <input type="text" name="diastolic_bp" placeholder="Your Blood Pressure" required="required" />
-		 <br>
-		 
-		 <input type="text" name="glucose_conc" placeholder="Gulucose Concentration" required="required" />
-		 <input type="text" name="skin" placeholder="Triceps Skin Thickness" required="required" />
-		 <input type="text" name="num_preg" placeholder="Number of time Pregnant" required="required" />
-		<br>
-        <br>
-         <br>
+    	<input type="text" name="glucose_conc" placeholder="Enter the Glucose conentration" required="required" />
+        <input type="text" name="diastolic_bp" placeholder=" Blood Pressure(in mm-Hg)" required="required" />
+		<input type="text" name="thickness" placeholder="thickness" required="required" />
+        <input type="text" name="insulin" placeholder="insulin" required="required" />
+            <input type="text" name="bmi" placeholder="bmi" required="required" />
 		
+        
+
+		<br>
+    	<input type="text" name="diab_pred" placeholder="Your family diab prediction" required="required" />
+        <input type="text" name="age" placeholder="age" required="required" />
+		<input type="text" name="skin" placeholder="skin" required="required" />
+        
+      <br>
+
+
+      
         
         <!-- Show button -->
         <div class="button_cont" align="center"><a class="button_css" href="https://github.com/projectprogrammer057" target="_blank" rel="nofollow noopener">
-            <button type="submit" class="btn btn-primary btn-block btn-large"><strong>Predict Diabetes</strong></button></a>
+            <button type="submit" class="btn btn-primary btn-block btn-large"><strong>Predict Heart disease</strong></button></a>
         </div>
         
     </form>
@@ -148,19 +114,7 @@
    </div>
 
  </div>
- <br>
- <p>
- <h2>All About The Input Data</h2><br>
- <b class="mimi">
-<span> Age</span>:-Enter Your Age in Years <br>
- <span>BMI</span>:-Enter Your Body Mass Index (weight in kg/(height in m)^2)[Input Value:-(withinin 10 to 90)] <br>
- <span>Diabetes Pedigree Function</span>:-A Function Which Scores likelihood of diabetes based on family history[Input Value:-(0 if non diabetic,1 if diabetic)] <br>
- <span>Serum Insulin</span>:-2-Hour after Glucose Administration(mlU/L)[Normal Range:-(16-166miU/L)]<br>
- <span>Blood Pressure</span>:-Enter Your Blood Pressure in mm/Hg[Normal Range:-120 mm/Hg]<br>
- <span>Glucose Concentration</span>:Plasma glucose concentration a 2 hours in an oral glucose tolerance test [Normal Range:-Less than 140mg/dl]<br>
- <span>Triceps Skin Thickness</span>:-Triceps skin fold thickness (mm)[INormal Range:-12mm(male),23mm(female)]<br>
- <span>Number of time Pregnant</span>:If the Person is woman,Then Enter the Number of time the woman is pregnant<br>
- </b>
-</p>
+ 
+
 </body>
 </html>
