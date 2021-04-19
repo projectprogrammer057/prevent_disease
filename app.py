@@ -17,13 +17,13 @@ def predict():
     
     features_name = [ "num_preg","glucose_conc","diastolic_bp","thickness","insulin","bmi","diab_pred","age","skin"]
     
-    df= pd.DataFrame(features_value, columns=features_name)
+    df = pd.DataFrame(features_value, columns=features_name)
     output = model.predict(df)
         
     if output == 1:
-        res_val = "** Diabatic Patient and Please Consult to the Doctor**"
+        res_val = "** Diabetes disease **"
     else:
-        res_val = " Patient has no Diabaties and Enjoy your life"
+        res_val = "no Diabetes disease "
         
 
     return render_template('index.html', prediction_text='Patient has {}'.format(res_val))
